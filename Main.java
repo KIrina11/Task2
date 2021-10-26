@@ -9,7 +9,7 @@ public class Main {
         System.out.print("Input x = ");
         int x = readX();
 
-        if (x <= 1000 && x >=-1000) {
+        if (x <= 1000 && x >= -1000) {
 
             int max = search_max_X(x);
             int min = search_min_X(x);
@@ -66,7 +66,7 @@ public class Main {
                 return Math.min(c1,n1);
             }
 
-            if (Math.abs(x) / 100 < 1 && Math.abs(x) / 10 >=1) {
+            if (Math.abs(x) / 100 < 1 && Math.abs(x) / 10 >= 1) {
                 int n2 = Math.abs(x) % 10;
                 int n1 = Math.abs(x) / 10;
 
