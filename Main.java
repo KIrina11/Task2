@@ -13,7 +13,7 @@ public class Main {
 
             int max = search_max_X(x);
             int min = search_min_X(x);
-
+            
             writeArea(max, min);
         }
         else {
