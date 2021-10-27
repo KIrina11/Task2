@@ -35,9 +35,9 @@ public class Main {
                 int digit2 = Math.abs(x) % 100 / 10;
                 int digit1 = Math.abs(x) / 100;
 
-                int c = Math.max(digit3, digit2);
+                int comparison = Math.max(digit3, digit2);
 
-                return Math.max(c, digit1);
+                return Math.max(comparison, digit1);
             }
 
             if (Math.abs(x) / 100 < 1 && Math.abs(x) / 10 >= 1) {
@@ -61,9 +61,9 @@ public class Main {
                 int digit2 = Math.abs(x) % 100 / 10;
                 int digit1 = Math.abs(x) / 100;
 
-                int c = Math.min(digit3,digit2);
+                int comparison = Math.min(digit3,digit2);
 
-                return Math.min(c,digit1);
+                return Math.min(comparison,digit1);
             }
 
             if (Math.abs(x) / 100 < 1 && Math.abs(x) / 10 >= 1) {
