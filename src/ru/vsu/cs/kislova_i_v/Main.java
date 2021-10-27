@@ -9,7 +9,7 @@ public class Main {
         System.out.print("Input x = ");
         int x = readX();
 
-        if (x <= 1000 && x >=-1000) {
+        if (x <= 1000 && x >= -1000) {
 
             int max = searchMaxX(x);
             int min = searchMinX(x);
@@ -66,7 +66,7 @@ public class Main {
                 return Math.min(comprasion,digit1);
             }
 
-            if (Math.abs(x) / 100 < 1 && Math.abs(x) / 10 >=1) {
+            if (Math.abs(x) / 100 < 1 && Math.abs(x) / 10 >= 1) {
                 int digit2 = Math.abs(x) % 10;
                 int digit1 = Math.abs(x) / 10;
 
