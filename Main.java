@@ -31,20 +31,20 @@ public class Main {
         if (x != 1000 && x != -1000) {
 
             if (Math.abs(x) / 100 > 0) {
-                int n3 = Math.abs(x) % 10;
-                int n2 = Math.abs(x) % 100 / 10;
-                int n1 = Math.abs(x) / 100;
+                int digit3 = Math.abs(x) % 10;
+                int digit2 = Math.abs(x) % 100 / 10;
+                int digit1 = Math.abs(x) / 100;
 
-                int c1 = Math.max(n3, n2);
+                int c = Math.max(digit3, digit2);
 
-                return Math.max(c1, n1);
+                return Math.max(c, digit1);
             }
 
             if (Math.abs(x) / 100 < 1 && Math.abs(x) / 10 >= 1) {
-                int n2 = Math.abs(x) % 10;
-                int n1 = Math.abs(x) / 10;
+                int digit2 = Math.abs(x) % 10;
+                int digit1 = Math.abs(x) / 10;
 
-                return Math.max(n2, n1);
+                return Math.max(digit2, digit1);
             }
 
             if (Math.abs(x) / 10 < 1) {
@@ -57,20 +57,20 @@ public class Main {
         if (x != 1000 && x != -1000) {
 
             if (Math.abs(x) / 100 > 0) {
-                int n3 = Math.abs(x) % 10;
-                int n2 = Math.abs(x) % 100 / 10;
-                int n1 = Math.abs(x) / 100;
+                int digit3 = Math.abs(x) % 10;
+                int digit2 = Math.abs(x) % 100 / 10;
+                int digit1 = Math.abs(x) / 100;
 
-                int c1 = Math.min(n3,n2);
+                int c = Math.min(digit3,digit2);
 
-                return Math.min(c1,n1);
+                return Math.min(c,digit1);
             }
 
             if (Math.abs(x) / 100 < 1 && Math.abs(x) / 10 >= 1) {
-                int n2 = Math.abs(x) % 10;
-                int n1 = Math.abs(x) / 10;
+                int digit2 = Math.abs(x) % 10;
+                int digit1 = Math.abs(x) / 10;
 
-                return Math.min(n2, n1);
+                return Math.min(digit2, digit1);
             }
 
             if (Math.abs(x) / 10 < 1) {
