@@ -11,8 +11,8 @@ public class Main {
 
         if (x <= 1000 && x >= -1000) {
 
-            int max = search_max_X(x);
-            int min = search_min_X(x);
+            int max = searchMaxX(x);
+            int min = searchMinX(x);
             
             writeArea(max, min);
         }
@@ -27,7 +27,7 @@ public class Main {
         return scanner.nextInt();
     }
 
-    private static int search_max_X(int x) {
+    private static int searchMaxX(int x) {
         if (x != 1000 && x != -1000) {
 
             if (Math.abs(x) / 100 > 0) {
@@ -53,7 +53,7 @@ public class Main {
         }
         return 1;
     }
-    private static int search_min_X(int x) {
+    private static int searchMinX(int x) {
         if (x != 1000 && x != -1000) {
 
             if (Math.abs(x) / 100 > 0) {
