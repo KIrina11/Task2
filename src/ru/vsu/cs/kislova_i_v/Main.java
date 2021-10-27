@@ -27,7 +27,7 @@ public class Main {
         return scanner.nextInt();
     }
 
-    private static int search_max_X(int x) {
+    private static int searchMaxX(int x) {
         if (x != 1000 && x != -1000) {
 
             if (Math.abs(x) / 100 > 0) {
